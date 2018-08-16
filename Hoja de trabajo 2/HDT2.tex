@@ -1,0 +1,108 @@
+\documentclass[12pt,letterpaper,twocolumn]{article}
+
+\usepackage{graphicx} 
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\topmargin=-1in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\begin{document}
+
+\title{Hoja de trabajo No.2}
+\author{Sébastien Escobar}
+\maketitle
+\renewcommand{\abstractname}{Ejercicio No.1 }
+\begin{abstract}
+Demostración de: 
+\[
+        \forall\ n.\ n^3\geq n^2
+\] donde $n\in\mathbb{N}$
+
+\subsection*{Por metodo inductivo}
+Se demuestra como primer punto que:
+\\ (El número 1) siendo esté el primer natural cumple con la propiedad P1.
+\\
+\\Partiendo de la suposición:
+\\ (Hipótesis de Inducción) donde un numero natural k cumple con la propiedad: P(k)
+\\
+\\Procedemos a demostrar que, el número k+1 cumple con la propiedad: P(k+1). 
+\\Con lo cual validamos la implicación P(k)=P
+\subsection*{Demostración}
+Reescribamos \[
+       \ n^3\geq n^2
+\] Se puede tomar un caso base, 
+\\donde todo n es = 0.
+\\Para lo cual se demuestra que:
+\[
+        \ 0^3\geq 0^2
+\] lo que es igual a
+\[
+        \ 0\geq 0
+\]
+Debido a que el caso base no nos lleva a una solución óptima, procedemos a analizar cada uno de los terminos
+de la desigualdad y comenzamos a descomponerlo en sus factores.
+\\
+\\Utilizando la propiedad P(k) escribimos los terminos como:
+\[(n+1)*(n+1)^2 = n^3\]
+\[(n+1)^2 = n^2\]
+\\Luego por la propiedad de división, pasamos a dividir el factor comun a ambos lados de la desigualdad.
+\\Con lo que quedaria como:
+\[[(n+1)*(n+1)^2 \geq (n+1)^2]/(n+1)^2\]
+Aplicando la regla correctamente llegamos a que:
+\[(n+1) \geq 1\]
+Siendo esta una desigualdad podemos restar de ambos lados el 1
+\[n+1-1 \geq 1-1\]
+Llegando así por metodo inductivo a
+\[n \geq 0\]
+\end{abstract}
+
+
+\renewcommand{\abstractname}{Ejercicio No.2}
+\begin{abstract}
+\subsection*{Demostrar utilizando inducción la desigualdad de Bernoulli:}
+\[
+        \forall\ n.\ (1+x)^n\geq nx
+\]
+\\donde $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
+
+\subsection*{Por metodo inductivo}
+Debido a que ya se demostro la propiedad P(k) ahora puede utilizarse, pero antes de ello se utiliza el caso base.
+Donde n = 0.
+\\
+\[(1+x)^0 \geq (0)x\] Y esto es igual a: \[1 \geq 0\]
+Lo anterior nos demuestra que el caso es cierto aunque no se halla demostrado, por lo que proseguimos a hacer la demostración.
+\\
+\\ Sea P(k) nuestra propiedad principal, tomando la desigualdad y aplicando la propiedad esta queda como:
+\[(1+x)^{(n+1)} \geq ((n+1)*x)+1\]
+\\
+Por propiedades de exponente, descomponemos \[(1+x)^{(n+1)}\] en \[(1+x)(1+x)^n.\]
+\\
+Mientras que por el otro lado, simplificamos \[ ((n+1)*x)+1\] en \[(nx+x)+1.\]
+\\
+Ya simplificada la desigualdad, desarrollamos el polinomio quedando como:
+\[ 1+x^n+x^{n+1}+x \geq nx+ x+1\]
+\\
+Eliminamos terminos semejantes, por la propiedad de resta:
+\[x^{n+1}+x^n \geq nx \]
+\\Sustituimos por el caso base n=0.
+Donde 
+\[x^{(0)+1}+x^{(0)} \geq (0)x \]
+Al sustituir quedamos con..
+\[x+1 \geq 0\]
+Restamos el 1 de ambos lados de la desigualdad.
+\\ Quedando así con:
+\[ x \geq -1 \]
+
+
+\end{abstract}
+
+\end{document}
