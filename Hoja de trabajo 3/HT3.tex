@@ -178,11 +178,41 @@ Basandonos en esta definicion podemos representar nuestro problema como:
     \\S(a) + S(0)
     \\S(S(a))
 \end{center}
+|
+\\
+\\Segundo caso, a $\otimes$ b = b $\otimes$ a
+\\
+\\Demostramos la primera parte por nuestra definicion de multiplicaicon
+\\Lo cual se escucharia como b veces a
+\\
+\\Debido a que lo anterior no se puede desglosar en sus componentes
+\begin{center}
+Lo anterior se ve como: a $\otimes$ b = ab
+\end{center}
+Si ahora aplicamos la segunda parte, se escucharia como a veces b
+\\
+\\Por ser una variable no se puede descomponer por lo cual se veria como
+\begin{center}
+b $\otimes$ a = ba
+\\Al igualar los terminos de cada lado de nuestra exprecion queda como:
+\\
+\\ab = ba, 
+\\A $\otimes$ B = B $\otimes$ A
+\end{center}
 \end{abstract}
 
-\renewcommand{\abstractname}{\\|}
+\renewcommand{\abstractname}{|}
 \begin{abstract}
-Segundo caso, a $\otimes$ b = b $\otimes$ a
-
+Tercer caso
+\\\item{$n \otimes (m \otimes l)=(n\otimes m)\otimes l$}
+\\\item{{\bf Caso base: $l=o$}
+\\\item{$n\otimes (m\otimes o)=n \otimes m = (n \otimes)\otimes o$}
+\\
+\\Seguimos con el \item{{\bf Caso inductivo: $l=s(i)$}
+\\
+\item{{\bf Hipotesis inductiva: }Asumimos que $m\otimes (n\otimes i)=(m\otimes n)\otimes i$}
+            \item{Sabemos que $n\otimes(m\otimes s(i))=n\otimes s(m\otimes i)=s(n\otimes(m\otimes i))$}
+            \item{Sabemos que $s(n\otimes(m\otimes i))=s((n\otimes m)\otimes i)$ por la hipotesis inductiva}
+            \item{Concluimos que $s((n\otimes m)\otimes i)=(n\otimes m)\otimes s(i)$}
 \end{abstract}
 \end{document}
