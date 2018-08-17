@@ -50,21 +50,139 @@ Se toma como posibilidad la suma de los numeros naturales unarios siendo estos  
 \renewcommand{\abstractname}{Ejercicio No.2}
 \begin{abstract}
 Definicion inductiva de la multiplicacion
-A  ($\otimes$)  B = A, si B=1
 \\
-\\A  ($\otimes$)  B = B, si A=1
+\\Apoyandonos en la definicion inductiva de la suma, podemos aplicar el siguiente modelo base para nuestra demostracion.
+\begin{center}
+A  ($\otimes$)  B = AB
+\end{center}
+Siendo A un numero natural unario
+Que puede expresarse como el siguiente
+\begin{center}
+S(0), expresando 1
+\end{center}
+Por otro lado un segundo numero natural unario B, expresado como S(S(0)) = 2, para este caso particular
+\\
+\\Antes de seguir, definimos la multiplicacion, como la suma de A, B veces.
+\\
+\\Lo cual con nuestra demostracion quedaria como:
+\begin{center}
+Siendo A = S(0)
+\end{center}
+El cual no puede expresarse como la suma de sus componentes ya que el se conforma a si mismo
+\begin{center}
+Y, B = S(S(0))
+\end{center}
+Logrando expresarse como la suma de sus componentes como:
+\begin{center}
+B = S(S(0)) = S(0) + S(0) 
+\end{center}
+\begin{center}
 
-
+\end{center}
+\end{abstract}
+\renewcommand{\abstractname}{|}
+\begin{abstract}
+Ahora nuestra expresion se veria de la siguiente manera
+\begin{center}
+S(0) ($\otimes$) S(0) + S(0)
+\end{center}
+Aplicando nuestra definicion intuitiva de la multiplicacion, podemos decir que A se multiplica por la composicion de B, que en este caso es S(0) + S(0), dando como resultado:
+\begin{center}
+S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0)
+\end{center}
+Si razonamos efectivamente podemos pensar que la expresion S(0) $\otimes$ S(0). (Para efectos practicos lo haremos con manzanas)
+\\
+\\Segun nuestra definicion, se escucharia como una vez una manza. Lo que seria una manza. Expresado en nuestro caso como S(0)
+\\
+\\Dejando asi nuestra expresion como: Una vez una manzana, mas, una vez una manzana
+\\
+\\Si aplicamos nuestra definicion de suma, quedaria como S(0) + S(0) = S(S(0))
+Resultando asi 2.
 \end{abstract}
 
 \renewcommand{\abstractname}{Ejercicio No.3}
 \begin{abstract}
-
+Ya que tenemos nuestra definicion de multiplicacion es momento de ver si es correcta:
+\\
+\\Primer caso, S(S(S(0))) $\otimes$ 0
+\\Tomando nuestra definicion se escucharia como, 0 veces S(S(S(0)))
+\\
+\\Ya que 0 no puede descomponerse se queda como si mismo, segun nuestro axioma
+\\
+\\Para S(S(S(0))), podemos descomponerlo en, S(0) + S(0) + S(0)
+\begin{center}
+S(0) $\otimes$ 0 + S(0) $\otimes$ 0 + S(0) $\otimes$ 0
+\end{center}
+Si definimos S(0) $\otimes$ 0, como 0 veces el sucesor de 0,
+\begin{center}
+Quedaria como 0 + 0 + 0 = 0
+\end{center}
 \end{abstract}
 
-\renewcommand{\abstractname}{Ejercicio No.4}
+\renewcommand{\abstractname}{|}
 \begin{abstract}
-
+Para nuestro segundo caso, S(S(S(0))) $\otimes$ S(0)
+\\Empezamos haciendo una distribucion de S(S(S(0))) en:
+\begin{center}
+(S(0) + S(0) + S(0)) $\otimes$ S(0)
+\end{center}
+Ahora multiplicamos cada uno de los terminos del lado derecho por el del lado izquierdo, lo que quedaria como
+\begin{center}
+    S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0)
+\end{center}
+Segun nuestra definicion, lo anterior se podria escuchar como una vez uno. 
+Lo que daria uno
+\begin{center}
+    Para lo cual: S(0) + S(0) + S(0) 
+    Por definicion de la suma esto es igual a S(S(S(0)))
+\end{center}
 \end{abstract}
 
+\renewcommand{\abstractname}{|}
+\begin{abstract}
+El tercer caso dispone S(S(S(0))) $\otimes$ S(S(0))
+Empezamos por desgolsar cada uno de los terminos
+\begin{center}
+    S(S(S(0))) = S(0) + S(0) + S(0)
+    \\S(S(0)) = S(0) + S(0) 
+\\|
+\\Lo que, quedaria como:
+\\(S(0) + S(0) + S(0)) $\otimes$ (S(0) + S(0))
+\end{center}
+\\|
+Por definicion de la multiplicacion, lo anterior se escucharia como 2 veces 3
+\\
+\\En lenguaje de numeros naturales unarios
+\\Y aplicando nuestra def de multiplicacion esto se veria como
+\begin{center}
+    S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0) + S(0) $\otimes$ S(0) 
+\end{center}
+\end{abstract}
+
+\renewcommand{\abstractname}{
+\\|
+\\Ejercicio No.4}
+\begin{abstract}
+Demostraremos utilizando induccion lo siguiente
+\\
+\\Primer caso, a + S(S(0)) 
+\\
+\\Tomando la definicion conocida de la suma
+\\Y aplicando su tercer concepto siendo este 
+\begin{center}
+s(i\oplus m) & \mbox{si } n=s(i) \\
+\end{center}
+Basandonos en esta definicion podemos representar nuestro problema como:
+\begin{center}
+    a + S(0) + S(0)
+    \\S(a) + S(0)
+    \\S(S(a))
+\end{center}
+\end{abstract}
+
+\renewcommand{\abstractname}{\\|}
+\begin{abstract}
+Segundo caso, a $\otimes$ b = b $\otimes$ a
+
+\end{abstract}
 \end{document}
